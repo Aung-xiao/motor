@@ -40,5 +40,6 @@
 ..\obj\can.o: F:\MDK5\ARM\ARMCC\Bin\..\include\stdarg.h
 ..\obj\can.o: F:\MDK5\ARM\ARMCC\Bin\..\include\math.h
 ..\obj\can.o: ..\HARDWARE\CAN\can.h
+..\obj\can.o: ..\HARDWARE\INCLUDE\includes.h
 ..\obj\can.o: ..\HARDWARE\M3508\m3508.h
 ..\obj\can.o: ..\HARDWARE\PID\pid.h
