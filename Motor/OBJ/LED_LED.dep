@@ -1,5 +1,5 @@
 Dependencies for Project 'LED', Target 'LED': (DO NOT MODIFY !)
-F (.\main.c)(0x630C79CB)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I ..\HARDWARE\LED -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\USER -I ..\STM32F10x_FWLib\inc -I ..\CORE -I ..\HARDWARE\CAN -I ..\HARDWARE\M3508 -I ..\HARDWARE\PID -I ..\HARDWARE\INCLUDE-IF:\GithubDesktop_ws\motor\Motor\USER\RTE-IF:\MDK5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-IF:\MDK5\ARM\CMSIS\Include-D__UVISION_VERSION="521" -DSTM32F10X_HD -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER-o ..\obj\main.o --omf_browse ..\obj\main.crf --depend ..\obj\main.d)
+F (.\main.c)(0x630C7D12)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I ..\HARDWARE\LED -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\USER -I ..\STM32F10x_FWLib\inc -I ..\CORE -I ..\HARDWARE\CAN -I ..\HARDWARE\M3508 -I ..\HARDWARE\PID -I ..\HARDWARE\INCLUDE-IF:\GithubDesktop_ws\motor\Motor\USER\RTE-IF:\MDK5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-IF:\MDK5\ARM\CMSIS\Include-D__UVISION_VERSION="521" -DSTM32F10X_HD -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER-o ..\obj\main.o --omf_browse ..\obj\main.crf --depend ..\obj\main.d)
 I (..\HARDWARE\LED\led.h)(0x532ACAF5)
 I (..\SYSTEM\sys\sys.h)(0x550F951A)
 I (..\USER\stm32f10x.h)(0x4D783CB5)
