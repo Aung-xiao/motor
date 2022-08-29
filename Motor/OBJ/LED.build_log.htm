@@ -1,0 +1,77 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¦ÌVision V5.21.1.0
+Copyright (C) 2016 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: 00 00, 00, LIC=GMZI6-DF85G-8TR3P-MHR6X-JTC54-9V3SG
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.21a
+Toolchain Path:  F:\MDK5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 3 (build 300)
+Assembler:       Armasm.exe V5.06 update 3 (build 300)
+Linker/Locator:  ArmLink.exe V5.06 update 3 (build 300)
+Library Manager: ArmAr.exe V5.06 update 3 (build 300)
+Hex Converter:   FromElf.exe V5.06 update 3 (build 300)
+CPU DLL:         SARMCM3.DLL V5.21a
+Dialog DLL:      DARMSTM.DLL V1.66.0.1
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V2.0.18.0
+Dialog DLL:        TARMSTM.DLL   
+ 
+<h2>Project:</h2>
+C:\Users\00\Desktop\rm_ws\Motor\USER\LED.uvprojx
+Project File Date:  08/29/2022
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 3 (build 300)', folder: 'F:\MDK5\ARM\ARMCC\Bin'
+Build target 'LED'
+compiling can.c...
+..\HARDWARE\CAN\can.c(14): warning:  #223-D: function "RCC_AHB1PeriphClockCmd" declared implicitly
+  	RCC_AHB1PeriphClockCmd(RCC_AHB1Periph_GPIOA, ENABLE);
+..\HARDWARE\CAN\can.c(14): error:  #20: identifier "RCC_AHB1Periph_GPIOA" is undefined
+  	RCC_AHB1PeriphClockCmd(RCC_AHB1Periph_GPIOA, ENABLE);
+..\HARDWARE\CAN\can.c(18): warning:  #223-D: function "GPIO_PinAFConfig" declared implicitly
+  	GPIO_PinAFConfig(GPIOA, GPIO_PinSource11, GPIO_AF_CAN1);
+..\HARDWARE\CAN\can.c(18): error:  #20: identifier "GPIO_AF_CAN1" is undefined
+  	GPIO_PinAFConfig(
+PIOA, 
+PIO_PinSource11, GPIO_AF_CAN1);
+..\HARDWARE\CAN\can.c(22): error:  #20: identifier "GPIO_Mode_AF" is undefined
+  	gpio.GPIO_Mode = GPIO_Mode_AF;
+..\HARDWARE\CAN\can.c(55): error:  #20: identifier "CAN1_RX0_IRQn" is undefined
+  	nvic.NVIC_IRQChannel = CAN1_RX0_IRQn;
+..\HARDWARE\CAN\can.c(61): error:  #20: identifier "CAN1_TX_IRQn" is undefined
+  	nvic.NVIC_IRQChannel = CAN1_TX_IRQn;
+..\HARDWARE\CAN\can.c(112): warning:  #223-D: function "RCC_AHB1PeriphClockCmd" declared implicitly
+  	RCC_AHB1PeriphClockCmd(RCC_AHB1Periph_GPIOB, ENABLE);
+..\HARDWARE\CAN\can.c(112): error:  #20: identifier "RCC_AHB1Periph_GPIOB" is undefined
+  	RCC_AHB1PeriphClockCmd(RCC_AHB1Periph_GPIOB, ENABLE);
+..\HARDWARE\CAN\can.c(118): warning:  #223-D: function "GPIO_PinAFConfig" declared implicitly
+  	GPIO_PinAFConfig(GPIOB, GPIO_PinSource12, GPIO_AF_CAN2);
+..\HARDWARE\CAN\can.c(118): error:  #20: identifier "GPIO_AF_CAN2" is undefined
+  	GPIO_PinAFConfig(
+PIOB, 
+PIO_PinSource12, GPIO_AF_CAN2);
+..\HARDWARE\CAN\can.c(122): error:  #20: identifier "GPIO_Mode_AF" is undefined
+  	gpio.GPIO_Mode = GPIO_Mode_AF;
+..\HARDWARE\CAN\can.c(155): error:  #20: identifier "CAN2_RX0_IRQn" is undefined
+  	nvic.NVIC_IRQChannel = CAN2_RX0_IRQn;
+..\HARDWARE\CAN\can.c(161): error:  #20: identifier "CAN2_TX_IRQn" is undefined
+  	nvic.NVIC_IRQChannel = CAN2_TX_IRQn;
+..\HARDWARE\CAN\can.c: 4 warnings, 10 errors
+compiling pid.c...
+compiling m3508.c...
+"..\OBJ\LED.axf" - 10 Error(s), 4 Warning(s).
+
+<h2>Collection of Component include folders:</h2>
+  C:\Users\00\Desktop\rm_ws\Motor\USER\RTE
+  F:\MDK5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+Target not created.
+Build Time Elapsed:  00:00:01
+</pre>
+</body>
+</html>
