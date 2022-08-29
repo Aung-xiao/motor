@@ -51,9 +51,12 @@
 #define M3508_CHASSIS_MOTOR_ID_5	    0x205
 #define M3508_CHASSIS_MOTOR_ID_7			0x207
 
+#define M2006_CHASSIS_MOTOR_ID_0			0x206
+#define M2006_CHASSIS_MOTOR_ID_1			0x208
 
-#define CAN2_M2006_MOTOR_ID_1      		0x201
-#define CAN2_M2006_MOTOR_ID_2      		0x202
+
+#define CAN2_M2006_MOTOR_ID_1      0x201
+#define CAN2_M2006_MOTOR_ID_2      0x202
 
 
 // AK80µç»ú±àºÅ
