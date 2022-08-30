@@ -1,6 +1,6 @@
 #include "includes.h"
 
-float Velocity_A=200;
+float Velocity_A=500;
 int main(void)
 {	
 		NVIC_PriorityGroupConfig(NVIC_PriorityGroup_4);
