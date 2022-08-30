@@ -9,7 +9,7 @@
 .\objects\pid.o: F:\MDK5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmFunc.h
 .\objects\pid.o: F:\MDK5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include\system_stm32f10x.h
 .\objects\pid.o: .\RTE\Device\STM32F103C8\stm32f10x_conf.h
-.\objects\pid.o: C:\Users\00\Desktop\TIM 实验程序\RTE\RTE_Components.h
+.\objects\pid.o: F:\GithubDesktop_ws\motor\MOTOR\RTE\RTE_Components.h
 .\objects\pid.o: F:\MDK5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\StdPeriph_Driver\inc\stm32f10x_can.h
 .\objects\pid.o: .\RTE\Device\STM32F103C8\stm32f10x.h
 .\objects\pid.o: F:\MDK5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\StdPeriph_Driver\inc\stm32f10x_exti.h

@@ -17,7 +17,7 @@ PID M3508_CHASSIS_MOTOR_PID_POSITION[4];	// 4个M2006电机
 void M3508_Motor_Init(void)
 {
 	// 三轮底盘电机速度环PID初始化
-	PID_parameter_init(&M3508_CHASSIS_MOTOR_PID_RPM[0], 10.0, 1.0, 0.0, 16384, 16384, -1);
+	PID_parameter_init(&M3508_CHASSIS_MOTOR_PID_RPM[0], 10.0, 0.0, 0.0, 16384, 16384, -1);
 
 }
 
@@ -25,7 +25,6 @@ void M3508_Motor_Init(void)
 // 接受频率：1kHz
 void m3508_update_m3508_info_can1(CanRxMsg *msg)
 {
-
 	switch(msg -> StdId)  // 检测标准ID
 	{
     case M3508_CHASSIS_MOTOR_ID_1://A轮子
@@ -36,6 +35,32 @@ void m3508_update_m3508_info_can1(CanRxMsg *msg)
 			M3508AngleIntegral(&M3508_CHASSIS_MOTOR_REAL_INFO[0]);
 		}; break;
 		
+		case M3508_CHASSIS_MOTOR_ID_2://B轮子
+		{ 
+			M3508_CHASSIS_MOTOR_REAL_INFO[1].ANGLE   = (msg -> Data[0] << 8) | msg -> Data[1];  // 转子机械角度
+			M3508_CHASSIS_MOTOR_REAL_INFO[1].RPM     = (msg -> Data[2] << 8) | msg -> Data[3];  // 实际转子转速
+			M3508_CHASSIS_MOTOR_REAL_INFO[1].CURRENT = (msg -> Data[4] << 8) | msg -> Data[5];  // 实际转矩电流
+			M3508AngleIntegral(&M3508_CHASSIS_MOTOR_REAL_INFO[1]);
+		}; break;
+		
+		case M3508_CHASSIS_MOTOR_ID_3://C轮子
+		{ 
+			M3508_CHASSIS_MOTOR_REAL_INFO[2].ANGLE   = (msg -> Data[0] << 8) | msg -> Data[1];  // 转子机械角度
+			M3508_CHASSIS_MOTOR_REAL_INFO[2].RPM     = (msg -> Data[2] << 8) | msg -> Data[3];  // 实际转子转速
+			M3508_CHASSIS_MOTOR_REAL_INFO[2].CURRENT = (msg -> Data[4] << 8) | msg -> Data[5];  // 实际转矩电流
+			M3508AngleIntegral(&M3508_CHASSIS_MOTOR_REAL_INFO[2]);
+		}; break;	
+		
+		case M3508_CHASSIS_MOTOR_ID_4://抬升机构
+		{ 
+			M3508_CHASSIS_MOTOR_REAL_INFO[3].ANGLE   = (msg -> Data[0] << 8) | msg -> Data[1];  // 转子机械角度
+			M3508_CHASSIS_MOTOR_REAL_INFO[3].RPM     = (msg -> Data[2] << 8) | msg -> Data[3];  // 实际转子转速
+			M3508_CHASSIS_MOTOR_REAL_INFO[3].CURRENT = (msg -> Data[4] << 8) | msg -> Data[5];  // 实际转矩电流
+		  M3508AngleIntegral(&M3508_CHASSIS_MOTOR_REAL_INFO[3]);
+//		M3508AngleIntegral(&M3508_CHASSIS_MOTOR_REAL_INFO[3]);
+		}; break;
+		
+
 		default: break;
 	}
 }

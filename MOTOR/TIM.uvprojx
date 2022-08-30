@@ -410,11 +410,6 @@
               <FilePath>.\Drive\src\key.c</FilePath>
             </File>
             <File>
-              <FileName>usart.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\Drive\src\usart.c</FilePath>
-            </File>
-            <File>
               <FileName>tim.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\Drive\src\tim.c</FilePath>

@@ -4,7 +4,6 @@
 ".\objects\led.o"
 ".\objects\delay.o"
 ".\objects\key.o"
-".\objects\usart.o"
 ".\objects\tim.o"
 ".\objects\sys.o"
 ".\objects\can.o"
